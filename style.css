@@ -1,0 +1,794 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+body{
+    background: #f8f8ff;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 40rem;
+    height: 35rem;
+    border-radius: 20px;
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.wrapper h1 {
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    resize: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    outline-color: #1e1e1e;
+}
+
+/* .textResult {
+    position: fixed;
+    top: 40%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    resize: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+} */
+
+.upper {
+    position: fixed;
+    top: 68%;
+    left: 7%;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0025c3, #1f3ad2, #334ee0, #4461ee, #5474fc);
+}
+
+.upper:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.upper:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.lower {
+    position: fixed;
+    top: 68%;
+    left: 29%;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0025c3, #1f3ad2, #334ee0, #4461ee, #5474fc);
+}
+
+.lower:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.lower:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.swap {
+    position: fixed;
+    top: 68%;
+    left: 51%;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0025c3, #1f3ad2, #334ee0, #4461ee, #5474fc);
+}
+
+.swap:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.swap:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.random {
+    position: fixed;
+    top: 68%;
+    left: 73%;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0025c3, #1f3ad2, #334ee0, #4461ee, #5474fc);
+}
+
+.random:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.random:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.extraSpaces {
+    position: fixed;
+    top: 78%;
+    left: 7%;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0025c3, #1f3ad2, #334ee0, #4461ee, #5474fc);
+}
+
+.extraSpaces:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.extraSpaces:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.extraLines {
+    position: fixed;
+    top: 78%;
+    left: 35%;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0025c3, #1f3ad2, #334ee0, #4461ee, #5474fc);
+}
+
+.extraLines:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.extraLines:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.duplicateLines {
+    position: fixed;
+    top: 78%;
+    left: 63%;
+    height: 2.5rem;
+    width: 12rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0025c3, #1f3ad2, #334ee0, #4461ee, #5474fc);
+}
+
+.duplicateLines:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.duplicateLines:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.replacewithtext {
+    position: fixed;
+    top: 88%;
+    left: 73%;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0025c3, #1f3ad2, #334ee0, #4461ee, #5474fc);
+}
+
+.replacewithtext:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.replacewithtext:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.clear {
+    position: fixed;
+    top: 57%;
+    left: 83.8%;
+    height: 2.5rem;
+    width: 3rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    color: #fff;
+    background: #ffded9;
+}
+
+.copy {
+    position: fixed;
+    top: 15.9%;
+    left: 83.8%;
+    height: 2.5rem;
+    width: 3rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border-top-right-radius: 20px;
+    border: none;
+    color: #fff;
+    background: #ecf0ff;
+}
+
+.copy .bi {
+    color: #0e3aff;
+}
+
+.clear .bi {
+    color: #fc3415;
+}
+
+/* .clear:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+}
+
+.clear:hover {
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+} */
+
+.findthis {
+    position: fixed;
+    top: 88%;
+    left: 7%;
+    height: 2.5rem;
+    width: 12.5rem;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.replacethis {
+    position: fixed;
+    top: 88%;
+    left: 40%;
+    height: 2.5rem;
+    width: 12.5rem;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+@media (max-width: 660px) {
+    .wrapper {
+        transition: 0.3s;
+        background: #ffffff;
+        width: 36rem;
+    }
+    .text {
+        transition: 0.3s;
+        width: 32rem;
+    }
+    .copy {
+        transition: 0.3s;
+        left: 31rem;
+    }
+    .clear {
+        transition: 0.3s;
+        left: 31rem;
+    }
+    .upper {
+        transition: 0.3s;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .lower {
+        transition: 0.3s;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .swap {
+        transition: 0.3s;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .random {
+        transition: 0.3s;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .extraSpaces {
+        transition: 0.3s;
+        width: 9rem;
+        font-size: 0.8rem;
+    }
+    .extraLines {
+        transition: 0.3s;
+        width: 9rem;
+        font-size: 0.8rem;
+    }
+    .duplicateLines {
+        transition: 0.3s;
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .replacewithtext {
+        transition: 0.3s;
+        width: 6rem;
+        font-size: 0.8rem;
+    }
+    .findthis{
+        transition: 0.3s;
+        width: 11rem;
+    }
+    .replacethis{
+        transition: 0.3s;
+        width: 11rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        transition: 0.3s;
+        background: #ffffff;
+        width: 32rem;
+    }
+    .text {
+        transition: 0.3s;
+        width: 29rem;
+    }
+    .copy {
+        transition: 0.3s;
+        left: 27.5rem;
+    }
+    .clear {
+        transition: 0.3s;
+        left: 27.5rem;
+    }
+    .upper {
+        transition: 0.3s;
+        left: 1.5rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .lower {
+        transition: 0.3s;
+        left: 8.9rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .swap {
+        transition: 0.3s;
+        left: 16.5rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .random {
+        transition: 0.3s;
+        left: 24rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .extraSpaces {
+        transition: 0.3s;
+        left: 1.5rem;
+        width: 9rem;
+        font-size: 0.8rem;
+    }
+    .extraLines {
+        transition: 0.3s;
+        width: 9rem;
+        font-size: 0.8rem;
+    }
+    .duplicateLines {
+        transition: 0.3s;
+        left: 21rem;
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .replacewithtext {
+        transition: 0.3s;
+        left: 24.5rem;
+        width: 6rem;
+        font-size: 0.8rem;
+    }
+    .findthis{
+        transition: 0.3s;
+        left: 1.5rem;
+        width: 11rem;
+    }
+    .replacethis{
+        transition: 0.3s;
+        left: 13rem;
+        width: 11rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .wrapper {
+        transition: 0.3s;
+        background: #ffffff;
+        width: 29rem;
+    }
+    .text {
+        transition: 0.3s;
+        width: 26rem;
+    }
+    .copy {
+        transition: 0.3s;
+        left: 24.5rem;
+    }
+    .clear {
+        transition: 0.3s;
+        left: 24.5rem;
+    }
+    .upper {
+        transition: 0.3s;
+        left: 0.8rem;
+        width: 6.5rem;
+        font-size: 0.6rem;
+    }
+    .lower {
+        transition: 0.3s;
+        left: 7.8rem;
+        width: 6.5rem;
+        font-size: 0.6rem;
+    }
+    .swap {
+        transition: 0.3s;
+        left: 14.8rem;
+        width: 6.5rem;
+        font-size: 0.6rem;
+    }
+    .random {
+        transition: 0.3s;
+        left: 21.5rem;
+        width: 7rem;
+        font-size: 0.6rem;
+    }
+    .extraSpaces {
+        transition: 0.3s;
+        left: 1.3rem;
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+    .extraLines {
+        transition: 0.3s;
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+    .duplicateLines {
+        transition: 0.3s;
+        left: 19rem;
+        width: 9rem;
+        font-size: 0.8rem;
+    }
+    .replacewithtext {
+        transition: 0.3s;
+        left: 22.2rem;
+        width: 6rem;
+        font-size: 0.8rem;
+    }
+    .findthis{
+        transition: 0.3s;
+        left: 1.2rem;
+        width: 10rem;
+    }
+    .replacethis{
+        transition: 0.3s;
+        left: 11.6rem;
+        width: 10rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .wrapper {
+        transition: 0.3s;
+        background: #ffffff;
+        width: 26rem;
+        height: 40rem;
+    }
+    .text {
+        transition: 0.3s;
+        top: 34%;
+        width: 24rem;
+    }
+    .copy {
+        transition: 0.3s;
+        top: 5.1rem;
+        left: 22rem;
+    }
+    .clear {
+        transition: 0.3s;
+        top: 19.6rem;
+        left: 22rem;
+    }
+    .upper {
+        transition: 0.3s;
+        top: 58%;
+        left: 1.3rem;
+        width: 7.5rem;
+        font-size: 0.9rem;
+    }
+    .lower {
+        transition: 0.3s;
+        top: 58%;
+        left: 9.2rem;
+        width: 7.5rem;
+        font-size: 0.9rem;
+    }
+    .swap {
+        transition: 0.3s;
+        top: 58%;
+        left: 17rem;
+        width: 7.5rem;
+        font-size: 0.9rem;
+    }
+    .random {
+        transition: 0.3s;
+        top: 66%;
+        left: 1.3rem;
+        width: 23rem;
+        font-size: 1rem;
+    }
+    .extraSpaces {
+        transition: 0.3s;
+        top: 74%;
+        left: 0.8rem;
+        width: 7.5rem;
+        font-size: 0.6rem;
+    }
+    .extraLines {
+        transition: 0.3s;
+        left: 8.7rem;
+        top: 74%;
+        width: 7.3rem;
+        font-size: 0.6rem;
+    }
+    .duplicateLines {
+        transition: 0.3s;
+        top: 74%;
+        left: 16.5rem;
+        width: 9rem;
+        font-size: 0.6rem;
+    }
+    .replacewithtext {
+        transition: 0.3s;
+        top: 90%;
+        left: 1.3rem;
+        width: 23rem;
+        font-size: 0.8rem;
+    }
+    .findthis{
+        transition: 0.3s;
+        top: 82%;
+        left: 1.2rem;
+        width: 11.5rem;
+    }
+    .replacethis{
+        transition: 0.3s;
+        top: 82%;
+        left: 13rem;
+        width: 11.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        transition: 0.3s;
+        background: #ffffff;
+        width: 23rem;
+        height: 40rem;
+    }
+    .text {
+        transition: 0.3s;
+        top: 34%;
+        width: 20rem;
+    }
+    .copy {
+        transition: 0.3s;
+        top: 5.1rem;
+        left: 18.5rem;
+    }
+    .clear {
+        transition: 0.3s;
+        top: 19.6rem;
+        left: 18.5rem;
+    }
+    .upper {
+        transition: 0.3s;
+        top: 58%;
+        left: 0.9rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .lower {
+        transition: 0.3s;
+        top: 58%;
+        left: 8.2rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .swap {
+        transition: 0.3s;
+        top: 58%;
+        left: 15.5rem;
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+    .random {
+        transition: 0.3s;
+        top: 66%;
+        left: 1.3rem;
+        width: 20.5rem;
+        font-size: 1rem;
+    }
+    .extraSpaces {
+        transition: 0.3s;
+        top: 74%;
+        left: 1rem;
+        width: 10rem;
+        font-size: 0.6rem;
+    }
+    .extraLines {
+        transition: 0.3s;
+        left: 12rem;
+        top: 74%;
+        width: 10rem;
+        font-size: 0.6rem;
+    }
+    .duplicateLines {
+        display: none;
+        /* top: 74%;
+        left: 16.5rem;
+        width: 9rem;
+        font-size: 0.6rem; */
+    }
+    .replacewithtext {
+        transition: 0.3s;
+        top: 90%;
+        left: 1.3rem;
+        width: 20.5rem;
+        font-size: 0.8rem;
+    }
+    .findthis{
+        transition: 0.3s;
+        top: 82%;
+        left: 1.2rem;
+        width: 10rem;
+    }
+    .replacethis{
+        transition: 0.3s;
+        top: 82%;
+        left: 12rem;
+        width: 10rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .wrapper {
+        transition: 0.3s;
+        background: #ffffff;
+        width: 21rem;
+        height: 40rem;
+    }
+    .text {
+        transition: 0.3s;
+        top: 34%;
+        width: 18rem;
+    }
+    .copy {
+        transition: 0.3s;
+        top: 5.1rem;
+        left: 16.5rem;
+    }
+    .clear {
+        transition: 0.3s;
+        top: 19.6rem;
+        left: 16.5rem;
+    }
+    .upper {
+        transition: 0.3s;
+        top: 58%;
+        left: 0.9rem;
+        width: 6.3rem;
+        font-size: 0.6rem;
+    }
+    .lower {
+        transition: 0.3s;
+        top: 58%;
+        left: 7.5rem;
+        width: 6.3rem;
+        font-size: 0.6rem;
+    }
+    .swap {
+        transition: 0.3s;
+        top: 58%;
+        left: 14.2rem;
+        width: 6.3rem;
+        font-size: 0.6rem;
+    }
+    .random {
+        transition: 0.3s;
+        top: 66%;
+        left: 1.3rem;
+        width: 19rem;
+        font-size: 1rem;
+    }
+    .extraSpaces {
+        transition: 0.3s;
+        top: 74%;
+        left: 1rem;
+        width: 9rem;
+        font-size: 0.6rem;
+    }
+    .extraLines {
+        transition: 0.3s;
+        left: 11rem;
+        top: 74%;
+        width: 9rem;
+        font-size: 0.6rem;
+    }
+    .duplicateLines {
+        display: none;
+        /* top: 74%;
+        left: 16.5rem;
+        width: 9rem;
+        font-size: 0.6rem; */
+    }
+    .replacewithtext {
+        transition: 0.3s;
+        top: 90%;
+        left: 1.3rem;
+        width: 19rem;
+        font-size: 0.8rem;
+    }
+    .findthis{
+        transition: 0.3s;
+        top: 82%;
+        left: 1.2rem;
+        width: 9rem;
+    }
+    .replacethis{
+        transition: 0.3s;
+        top: 82%;
+        left: 11rem;
+        width: 9rem;
+    }
+}
